@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <script type="module" src="scripts/game-won.js"></script>
+        <script type="module" src="scripts/js.cookie.mjs"></script>
+        <script nomodule defer src="scripts/js.cookie.js"></script>
+        <script src="scripts/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="banner">
+            <span id="game_title">Super Shopper</span>
+        </div>
+        <div id="game">
+            <img src="images/popping-sparkles.gif" alt="fireworks" id="fireworks1">
+            <img src="images/popping-sparkles.gif" alt="fireworks" id="fireworks2">
+            <div id="toplay-box">
+                <p class="congrats">YOU WON!! </p>
+                <p class="congrats2" id="win_text"></p>
+                <button class="playbutton" onclick="window.location.href = 'characterSelection.html';">Try Again!</button>
+            </div>   
+        </div>
+
+    </body>
+    
+    
+</html>

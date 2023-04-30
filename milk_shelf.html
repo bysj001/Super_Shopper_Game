@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="robin_egg_blue">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/shelf.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/view_item.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap" rel="stylesheet">
+    <script src='scripts/jquery.min.js'></script>
+    <script type="module" src='scripts/shelf.js'></script>
+    <script type="module" src="scripts/js.cookie.mjs"></script>
+    <script nomodule defer src="scripts/js.cookie.js"></script>
+
+
+    <!-- include the needed font from google api -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Archivo+Black" />
+    <!-- include the nutrition label plugin css file -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/nutrition_label.min.css">
+    <!-- include the nutrition label plugin js file -->
+    <script type="text/javascript" src="scripts/nutrition_label.min.js"></script>
+</head>
+<body>
+    <div id="banner">
+        <span id="game_title">Super Shopper</span>
+    </div>
+    <section class="label_box naples_yellow" id="label_box">
+        <button class="close_button light_red" id="close_button">Close</button>
+        <div id="nutrition_label" class="nutrition_label"></div>
+        <div class="vstack">
+            <img class="food_image_select" src="images/Lettuce.png" id="popup_food_image">
+            <div class="price_text"><p id="price_text">Price: $2.00</p></div>
+            <button class="put_in_cart_button light_red" id="put_in_cart_button">Put in Cart</button>
+        </div>
+    </section>
+    <button class="back_button light_red" id="back_button">Back</button>
+    <div class="outer_box naples_yellow">
+        <img class="food_image" src="images/Milk.png" id="Milk">
+        <img class="food_image" src="images/Milk.png" id="Milk">
+        <img class="food_image" src="images/Milk.png" id="Milk">
+        <img class="food_image" src="images/Milk.png" id="Milk">
+        <img class="food_image" src="images/Milk.png" id="Milk">
+        <img class="food_image" src="images/Milk.png" id="Milk">
+        <img class="food_image" src="images/Milk.png" id="Milk">
+        <img class="food_image" src="images/Milk.png" id="Milk">
+        <img class="food_image" src="images/Milk.png" id="Milk">
+        <img class="food_image" src="images/Milk.png" id="Milk">
+        <img class="food_image" src="images/Milk.png" id="Milk">
+        <img class="food_image" src="images/Milk.png" id="Milk">
+        <hr class="shelf_divider light_red"/>
+        <img class="food_image pad_top" src="images/AlmondMilk.png" id="AlmondMilk">
+        <img class="food_image pad_top" src="images/AlmondMilk.png" id="AlmondMilk">
+        <img class="food_image pad_top" src="images/AlmondMilk.png" id="AlmondMilk">
+        <img class="food_image pad_top" src="images/AlmondMilk.png" id="AlmondMilk">
+        <img class="food_image pad_top" src="images/AlmondMilk.png" id="AlmondMilk">
+        <img class="food_image pad_top" src="images/AlmondMilk.png" id="AlmondMilk">
+        <img class="food_image pad_top" src="images/AlmondMilk.png" id="AlmondMilk">
+        <img class="food_image pad_top" src="images/AlmondMilk.png" id="AlmondMilk">
+        <img class="food_image pad_top" src="images/AlmondMilk.png" id="AlmondMilk">
+        <img class="food_image pad_top" src="images/AlmondMilk.png" id="AlmondMilk">
+        <img class="food_image pad_top" src="images/AlmondMilk.png" id="AlmondMilk">
+        <img class="food_image pad_top" src="images/AlmondMilk.png" id="AlmondMilk">
+        <hr class="shelf_divider light_red"/>
+        <img class="food_image pad_top" src="images/Cheese.png" id="Cheese">
+        <img class="food_image pad_top" src="images/Cheese.png" id="Cheese">
+        <img class="food_image pad_top" src="images/Cheese.png" id="Cheese">
+        <img class="food_image pad_top" src="images/Cheese.png" id="Cheese">
+        <img class="food_image pad_top" src="images/Cheese.png" id="Cheese">
+        <img class="food_image pad_top" src="images/Cheese.png" id="Cheese">
+        <img class="food_image pad_top" src="images/Cheese.png" id="Cheese">
+        <img class="food_image pad_top" src="images/Cheese.png" id="Cheese">
+        <img class="food_image pad_top" src="images/Cheese.png" id="Cheese">
+        <img class="food_image pad_top" src="images/Cheese.png" id="Cheese">
+        <img class="food_image pad_top" src="images/Cheese.png" id="Cheese">
+        <img class="food_image pad_top" src="images/Cheese.png" id="Cheese">
+        <hr class="shelf_divider light_red"/>
+        <img class="food_image pad_top" src="images/Yogurt.png" id="Yogurt">
+        <img class="food_image pad_top" src="images/Yogurt.png" id="Yogurt">
+        <img class="food_image pad_top" src="images/Yogurt.png" id="Yogurt">
+        <img class="food_image pad_top" src="images/Yogurt.png" id="Yogurt">
+        <img class="food_image pad_top" src="images/Yogurt.png" id="Yogurt">
+        <img class="food_image pad_top" src="images/Yogurt.png" id="Yogurt">
+        <img class="food_image pad_top" src="images/Yogurt.png" id="Yogurt">
+        <img class="food_image pad_top" src="images/Yogurt.png" id="Yogurt">
+        <img class="food_image pad_top" src="images/Yogurt.png" id="Yogurt">
+        <img class="food_image pad_top" src="images/Yogurt.png" id="Yogurt">
+        <img class="food_image pad_top" src="images/Yogurt.png" id="Yogurt">
+        <img class="food_image pad_top" src="images/Yogurt.png" id="Yogurt">
+        <hr class="shelf_divider light_red"/>
+    </div>
+    <div id="test1"></div>
+</body>
+</html>

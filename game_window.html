@@ -1,0 +1,73 @@
+<html>
+
+<title>Super Health Shopper Game Layout</title>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="stylesheets/gamewindow.css">
+
+<!-- HTML -->
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap" rel="stylesheet">
+  <script src='scripts/jquery.min.js'></script>
+  <script type="module" src='scripts/gamewindow.js'></script>
+  <script type="module" src="scripts/js.cookie.mjs"></script>
+  <script nomodule defer src="scripts/js.cookie.js"></script>
+          
+</head>
+<body>
+  <div id="banner">
+      <span id="game_title"> Super Shopper </span>
+  </div>
+  <div class='outer-container'>
+
+    <img class='player-avatar' src='images/PersonCart.png' />
+    <img class='arrow' id="arrow1" src='images/arrow.png' />
+    <img class='arrow' id="arrow2" src='images/arrow.png' />
+    <div id = 'goalBox'> <p id = 'goalBoxText'> </p> </div>
+    <div class = 'ShoppingList'>
+      <img class='StickyNote' src='images/StickyNote.png' />
+      <h3> In My Cart </h3>
+      <div id = 'shopList'> <p id = 'shopListText'> </p></div>
+      <!-- <ul>
+        <li> 5 g Protien </li>
+        <li> 6 g Vegetables </li>
+        <li> 3 g Fruit </li>
+      </ul> -->
+    </div> <!--End of ShoppingList container-->
+
+    <div id="howToPlay"> 
+      <h4> How to Play: </h4>
+      <p> use your <strong> arrow keys </strong> to navigate your shopper around the store. To view a shelf, direct the shopper toward the shelf of your choosing. Collide your shopper with the shelf to 'inspect' the shelf's contents. From here, you may use your <strong> mouse pad </strong> to select a food item on the shelf, view it's nutrition label, add it to your cart, or go back to the main game window. Enjoy and remember, always shop responsibly! </p>
+      <button id="buttonToPlay"> Okay, I'm ready to play! </button>
+    </div>
+
+    <div id = 'shelf1' class='shelf'>
+      <h1> Meat </h1>
+    </div>
+    <div id = 'shelf2' class='shelf'>
+      <h1> Vegetables </h1>
+    </div>
+    <div id = 'shelf3' class='shelf'>
+      <h1> Bread & Snacks </h1>
+    </div>
+    <div id = 'shelf4' class='shelf'>
+      <h1> Canned Goods </h1>
+    </div>
+    <div id = 'shelf5' class='shelf'>
+      <h1> Dairy </h1>
+    </div>
+    <div id = 'checkoutPopup' > Checkout Now? 
+      <button id='yes'> Yes </button>
+      <button id='no'> No </button>
+    </div>
+    <div class = 'register'>
+      <h2> Checkout Here! </h2>
+      <img class='cashier' src='images/Cashier.png'/>
+    </div>
+    <div id = 'timer'>0:00</div>
+  </div> <!-- end outer-container -->
+</body>
+
+</html>

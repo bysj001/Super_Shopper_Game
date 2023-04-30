@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Character Customization Page</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/lofiStyle.css">
+	<script type="module" src="scripts/scripts.js"></script>
+    <script type="module" src="scripts/js.cookie.mjs"></script>
+   	<script nomodule defer src="scripts/js.cookie.js"></script>
+	<script src="scripts/jquery.min.js"></script>
+</head>
+<body>
+	<div id="banner">
+		<span id="game_title">Super Shopper</span>
+	</div>
+
+	<h2>Character Customization & Pre-Game Settings</h1>
+	<form>
+		<div class="attribute">
+			<label for="age" class="attribute-label">Age:</label>
+			<div class="attribute-value">
+				<input type="range" id="age" name="age" min="16" max="25" value="16" step="1" oninput="ageValue.innerHTML = age.value">
+				<span><span id="ageValue">16</span></span>
+			</div>
+		</div>
+
+		<div class="attribute">
+			<label for="height" class="attribute-label">Height (in):</label>
+			<div class="attribute-value">
+			  <input type="range" id="height" name="height" min="48" max="84" value="48" step="1" oninput="document.getElementById('heightValue').innerHTML = this.value">
+			  <span><span id="heightValue">48</span></span>
+			</div>
+		</div>		  
+		<div class="attribute">
+			<label for="weight" class="attribute-label">Weight (lbs):</label>
+			<div class="attribute-value">
+				<input type="range" id="weight" name="weight" min="75" max="300" value="75" step="1" oninput="weightValue.innerHTML = weight.value">
+				<span><span id="weightValue">75</span></span>
+			</div>
+		</div>
+
+		<label id="calLabel" for="calories">Weekly Caloric Intake:</label>
+		<div>
+		  <input id="calorieCalc" type="text" value="0" readonly>
+		</div>
+
+        <div class="settings">
+            <form>
+              <label for="budget">Budget($):</label>
+              <input type="text" id="budget" name="budget" placeholder="Enter budget">
+          
+              <label for="allergies">Food Allergies:</label>
+              <select id="allergies" name="allergies">
+                <option value="none">None</option>
+                <option value="nuts">Nuts</option>
+                <option value="dairy">Dairy</option>
+                <option value="gluten">Gluten</option>
+				<option value="shellfish">Shellfish</option>
+              </select>
+
+			  <label for="time">Game Time(minutes):</label>
+			  <input type="text" id="time" name="time" placeholder="Enter time">
+          
+            </form>
+          </div>
+          
+          
+	</form>
+
+    <input id ="but" class= "button" type="submit" value="Submit">
+</body>
+

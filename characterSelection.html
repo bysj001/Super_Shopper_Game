@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Character Selection</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="scripts/characterSelection.js"></script>
+    <script type="module" src="scripts/js.cookie.mjs"></script>
+    <script nomodule defer src="scripts/js.cookie.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="banner">
+      <span id="game_title">Super Shopper</span>
+    </div>
+    <h1>Choose Your Character</h1>
+    <div class="character-list">
+      <div class="character-option">
+        <span class="character-optiontext"
+          >Protein diet: Consuming foods high in protein and limiting the intake
+          of carbohydrates and fats. Lean meats, poultry, fish, eggs, dairy
+          products, legumes, and nuts.
+        </span>
+        <a href="#" class="character-link" data-character="Mr. Protein">
+          <img src="images/protein.jpg" alt="High Protein Character" />
+          <p>Mr. Protein</p>
+          <p>Protein</p>
+        </a>
+      </div>
+      <div class="character-option">
+        <span class="character-optiontext"
+          >Vegan diet: A vegan diet is a plant-based diet that excludes all
+          animal products, including meat, poultry, seafood, dairy, eggs, and
+          honey.
+        </span>
+        <a href="#" class="character-link" data-character="Vegan Vanessa">
+          <img src="images/vegan.jpg" alt="Vegan Character" />
+          <p>Vegan Vanessa</p>
+          <p>Vegan</p>
+        </a>
+      </div>
+      <div class="character-option">
+        <span class="character-optiontext"
+          >Keto diet: is a high-fat, low-carbohydrate diet that induces a
+          metabolic state called ketosis, where the body burns fat for fuel
+          instead of carbohydrates.
+        </span>
+        <a href="#" class="character-link" data-character="Keto Kai">
+          <img src="images/meat.jpg" alt="Meat Only Character" />
+          <p>Keto Kai</p>
+          <p>Keto</p>
+        </a>
+      </div>
+    </div>
+    <h2>Create Your Custom Character</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="diet">Diet:</label>
+      <select id="diet" name="diet">
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="NoRestriction">No Restriction</option></select
+      ><br /><br />
+    </form>
+
+    <input id="Create" type="submit" value="submit" />
+
+    <div class="character-popup">
+      <div class="popup-content"></div>
+    </div>
+
+    <script type="module" src=" scripts/characterSelection.js"></script>
+  </body>
+</html>
